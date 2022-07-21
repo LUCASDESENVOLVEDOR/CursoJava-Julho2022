@@ -2,8 +2,7 @@ package br.com.impacta.arrays;
 
 public class Array01 {
 
-	public static void main(String[] args) {	
-				
+	public static void main(String[] args) {			
 	
 		//definindo um array de inteiros.	
 		int[] numeros = new int[6];		
@@ -14,6 +13,7 @@ public class Array01 {
 		numeros[2] = -12;
 		numeros[3] = 0;
 		numeros[4] = 8;
+		numeros[5] = 8;
 					
 		//int i = 0; //variavel inicia do 0 e representa
 		 // a posicao 0 do nosso array.				
@@ -30,7 +30,7 @@ public class Array01 {
 		//ao contrario.		
 		for (int i = numeros.length-1; i >= 0; i--) {				
 			System.out.println(numeros[i]);	
-		}		
+		}	
 		
 		
 		//NAO É POSSIVEL REDIMENSSIONAR UM ARRAY.

@@ -1,6 +1,7 @@
 Exercícios da próxima aula (28/07):
 
 3 - Escreva um programa Java que leia um arquivo TXT, caso não localize adicione um tratamento.
+
 4 - Escreva uma função que receba um parametro do tipo inteiro entre 0 e 100, caso o valor informado for fora do range, retorne uma excecao de IllegalArgumentException
 
 Até agora discutimos todas as exceções que são incorporadas ou fornecidas pela linguagem Java. Além dessas exceções, também podemos definir nossas próprias exceções. Elas são chamadas de exceções personalizadas ou exceções definidas pelo usuário.

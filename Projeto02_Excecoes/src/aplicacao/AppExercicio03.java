@@ -12,6 +12,7 @@ public class AppExercicio03 {
 		//3 - Escreva um programa Java que leia um arquivo TXT,
 		//caso não localize adicione um tratamento.
 		
+		
 		try {
 			
 			FileReader arquivo = new FileReader("C:\\Users\\Lucas - Senai\\Documents\\AULA04.txt");
@@ -26,7 +27,7 @@ public class AppExercicio03 {
 				System.out.println(dados);				
 			}			
 			
-			leitura.close();		
+				
 			
 			//System.out.println("Por enquanto tudo ok");
 			
@@ -36,7 +37,8 @@ public class AppExercicio03 {
 		}		
 		catch(IOException e) {
 			System.out.println("Falha ao ler ou gravar informações no arquivo.");
-		}	
+		}
+		
 		
 	}
 }

@@ -8,6 +8,16 @@ public class Curso {
 	private double preco;
 	
 	
+	public Curso(int codigo, String descricao, int cargaHoraria, double preco) {
+		this.setCodigo(codigo); 
+		this.setDescricao(descricao); 
+		this.setCargaHoraria(cargaHoraria); 
+		this.setPreco(preco); 
+	}
+	
+	
+	
+	
 	public int getCodigo() {
 		return codigo;
 	}

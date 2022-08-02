@@ -4,6 +4,8 @@ public class Aluno extends Pessoa {
 	
 	private int matricula;
 	private Curso curso;
+	
+	
 	public int getMatricula() {
 		return matricula;
 	}

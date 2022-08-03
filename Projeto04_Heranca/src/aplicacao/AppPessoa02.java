@@ -1,4 +1,6 @@
 package aplicacao;
+import javax.swing.JOptionPane;
+
 import classe.Aluno;
 import classe.Curso;
 import classe.Funcionario;
@@ -13,12 +15,18 @@ public class AppPessoa02 {
 		pessoa.setNome("Lucas");
 		pessoa.setIdade(29);
 		
+		JOptionPane.showMessageDialog(null, pessoa.mostrar());
+		
+		
 		//instancia da classe funcionario
 		Funcionario funcionario = new Funcionario();
 		funcionario.setNome("Igor");
 		funcionario.setIdade(22);
 		funcionario.setCargo("Eletricista");
 		funcionario.setSalario(6000);
+		JOptionPane.showMessageDialog(null, funcionario.mostrar());
+		
+		
 
         //instancia da classe aluno.
 		Aluno aluno = new Aluno();
@@ -32,8 +40,8 @@ public class AppPessoa02 {
 //		curso.setCargaHoraria(40);
 //		curso.setPreco(100);		
 	
-		aluno.setCurso(new Curso(34,"Java 3",40,100));
-		
+		aluno.setCurso(new Curso(34,"Java 3",40,100));		
+		JOptionPane.showMessageDialog(null, aluno.mostrar());	
 		
 	}
 	
@@ -47,6 +55,28 @@ public class AppPessoa02 {
 //	 da produto e ter 2 atributos
 //	 taxaImportacao
 	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

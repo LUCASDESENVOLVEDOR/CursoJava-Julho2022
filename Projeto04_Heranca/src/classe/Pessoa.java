@@ -6,11 +6,18 @@ public class Pessoa {
 	private int idade;
 	
 	
+	public Pessoa() {};	
+	
+	public Pessoa(String nome, int idade) {
+		super();	
+		this.setNome(nome);
+		this.setIdade(idade);
+	}
+	
 	public String mostrar() {		
 		return "\nNome: " + this.getNome() + 
 				"\nIdade: "+ this.getIdade();		
 	}
-	
 	
 	public String getNome() {
 		return nome;

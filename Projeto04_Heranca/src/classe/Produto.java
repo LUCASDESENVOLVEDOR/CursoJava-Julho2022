@@ -1,40 +1,38 @@
 package classe;
 
-public class Curso {
+public class Produto {
 	
-	private int codigo;
+	private final int codigo;
+	private String categoria;
 	private String descricao;
-	private int cargaHoraria;
 	private double preco;
 	
 	
-	public Curso(int codigo, String descricao, int cargaHoraria, double preco) {
-		this.setCodigo(codigo); 
-		this.setDescricao(descricao); 
-		this.setCargaHoraria(cargaHoraria); 
-		this.setPreco(preco); 
+	private static int contador = 1;
+	
+	public Produto(String categoria, String descricao, double preco) {
+		
+		this.codigo = contador++;
+		this.setCategoria(categoria);
+		this.setDescricao(descricao);
+		this.setPreco(preco);
 	}
-	
-	
-	
-	
 	public int getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+	
+	
+	public String getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
 	}
 	public String getDescricao() {
 		return descricao;
 	}
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}
-	public int getCargaHoraria() {
-		return cargaHoraria;
-	}
-	public void setCargaHoraria(int cargaHoraria) {
-		this.cargaHoraria = cargaHoraria;
 	}
 	public double getPreco() {
 		return preco;
@@ -47,7 +45,7 @@ public class Curso {
 		
 		return "Código: " + this.getCodigo() + 
 				"\nDescrição: " + this.getDescricao() + 
-				"\nCarga Horária: " + this.getCargaHoraria() + 
+				"\nCategoria: " + this.getCategoria() + 
 				"\nPreço: " + this.getPreco();	
 		
 	}

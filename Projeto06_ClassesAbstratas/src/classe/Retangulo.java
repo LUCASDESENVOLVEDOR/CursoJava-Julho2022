@@ -19,8 +19,7 @@ public class Retangulo extends Figura {
 		this.altura = altura;
 	}
 	
-	//a sobreescrita é obrigatória
-	
+	//a sobreescrita é obrigatória	
 	@Override
 	public double calcularArea() {		 
 		//Area = base * altura.		
@@ -28,3 +27,18 @@ public class Retangulo extends Figura {
 	}
 
 }
+
+
+//Criar classe Circulo herdar de Figura com uma propriedade
+ // raio e realizar o Override de CalcularArea()
+
+
+
+
+
+
+
+
+
+
+

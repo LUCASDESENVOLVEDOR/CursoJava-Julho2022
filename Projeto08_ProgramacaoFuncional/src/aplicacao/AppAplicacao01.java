@@ -3,18 +3,34 @@ package aplicacao;
 import interfaces.Operacao01;
 
 public class AppAplicacao01 {
+	
+	public static int contarPalavras(String s) {
+		
+		String texto = s.trim();			
+		String[] itens = texto.split(" ");
+		
+		int contador = 0;
+		for (String elemento : itens) {
+			if(elemento.length() > 0) //nao ira contar os espacos em branco.
+				contador++;				
+		}
+		
+		return contador;	
+		
+		
+	}
+	
+	
 	public static void main(String[] args) {
 		
-		Operacao01 op1 = s ->  s.length(); 
-			
-		int retorno = op1.executar("Curso Java");
+		Operacao01 op1 = s ->  s.length();
 		
-		System.out.println("Retorno " + retorno);
-		
+		int retorno = op1.executar("Curso Java");		
+		System.out.println("Retorno " + retorno);	
 		
 		//parametro = texto.
-		//retorno=  numero de palavras.		
-		// O curso de hoje comeca hoje.
+		//retorno=  numero de pal+avras.		
+		// O curso de JAVA comeca hoje.
 		
 		Operacao01 op2 =  s-> {
 			
@@ -23,7 +39,7 @@ public class AppAplicacao01 {
 			
 			int contador = 0;
 			for (String elemento : itens) {
-				if(elemento.length() > 0)
+				if(elemento.length() > 0) //nao ira contar os espacos em branco.
 					contador++;				
 			}
 			
@@ -31,9 +47,16 @@ public class AppAplicacao01 {
 			
 		};
 				
-		String texto = "O curso ja comecou";		
+		//\n \r \"
+		String texto = "O \"curso\" ja comecou";		
 		int totalPalavras = op2.executar(texto);		
 		System.out.println("Total de palavras: " + totalPalavras);
+		System.out.println(texto);	
+		
+		Operacao01 op3 = s-> contarPalavras(s);
+		
+		System.out.println(op3.executar
+				("Esse código é mto comum de acontecer") + " palavras");
 		
 		
 	}

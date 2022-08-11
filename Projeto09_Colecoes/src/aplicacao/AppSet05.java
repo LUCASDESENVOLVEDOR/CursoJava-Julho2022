@@ -13,6 +13,7 @@ public class AppSet05 {
 		cursos.add(new Curso(200,"Inglês Instrumental", 100,1500));
 		cursos.add(new Curso(300,"Node", 8,5000));
 		cursos.add(new Curso(100,"PHP", 40,1200));		
+		
 		cursos.forEach(s -> System.out.println(s.mostrar() + "\n"));		
 		
 		//VERIFICAÇÕES REALIZADAS PELO SET

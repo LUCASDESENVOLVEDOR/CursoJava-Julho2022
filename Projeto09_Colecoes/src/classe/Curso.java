@@ -72,6 +72,24 @@ public class Curso{
 		
 		return super.equals(obj);
 	}
+
+	@Override
+	public int hashCode() {
+		
+		Double n = this.getPreco();	
+		
+		return this.getCodigo() + 
+			   this.getDescricao().hashCode() +
+			   this.getCargaHoraria() +
+			   n.hashCode();
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -16,6 +16,8 @@ public class AppSet02 {
 		         //remove os duplicados.
 		
 		
+		//TreeSet
+		
 		Set<String> nomes = new TreeSet<>();	
 		
 		nomes.add("Adriana");

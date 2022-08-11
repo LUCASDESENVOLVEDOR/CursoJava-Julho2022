@@ -12,6 +12,7 @@ public class AppSet03 {
 		produtos.add(new Produto("Informática", "Laptop",40));
 		produtos.add(new Produto("Limpeza", "Sabonete",3));
 		produtos.add(new Produto("Alimentação", "Macarrão",100));
+		
 		//produtos.add(new Produto("Transporte", "Bicicleta",40));
 		//produtos.add(new Produto("Transporte", "Bicicleta",40));
 		

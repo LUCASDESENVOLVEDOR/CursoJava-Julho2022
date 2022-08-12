@@ -18,3 +18,9 @@ public class AppMap02 {
 	    
 	}
 }
+
+//EXERCICIO - AppMap03 - 
+ //Crie o seu MAP com Double,String faça a exibição por Foreach.
+
+
+

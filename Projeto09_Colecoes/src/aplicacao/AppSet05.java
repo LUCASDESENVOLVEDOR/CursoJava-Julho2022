@@ -23,3 +23,27 @@ public class AppSet05 {
 		
 	}
 }
+
+
+/*Exercicio 01 -
+
+	CRIAR UMA APLICACAO CHAMADA APPSET06 - 
+	
+	CRIE UMA LISTA UTILIZANDO SET<Produto>, adicione 3 produtos onde 
+	1 será duplicado.
+	
+	implemente em Produto Overrride de HASHCODE e EQUALS 
+	assim como realizado em CURSO.
+	
+	para que ao exbir a lista aparece apenas 2 produtos.
+
+*/
+
+
+
+
+
+
+
+
+

@@ -33,22 +33,22 @@ public class AppGravacaoArquivo02 {
 			}		
 				
 			
-			writer.close();		
+			writer.close();	
 			
-			JOptionPane.showMessageDialog(null,"Arquivo criado com sucesso!");
-			
-			
+			JOptionPane.showMessageDialog(null,"Arquivo criado com sucesso!");			
 			
 			
-			
-		} catch (Exception e) {
+		}
+		
+		catch (Exception e) {
 			
 			JOptionPane.showMessageDialog(null, e.getMessage());		
 			
-		}		
+		}
+		
+		
+		
 	}
-	
 }
-
 
 
